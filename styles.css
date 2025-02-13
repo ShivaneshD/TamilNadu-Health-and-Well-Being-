@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0078d7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header .header-text h1 {
+    margin: 10px 0 5px;
+    font-size: 2em;
+}
+
+header .header-text h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0078d7;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #0078d7;
+}
+
+.content {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0078d7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.content {
+    animation: fadeIn 1s ease-in;
+}
+/* Programs Page Styles */
+#programs .scheme {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#programs .scheme h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+#programs .scheme-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#programs .scheme-link:hover {
+    text-decoration: underline;
+}
+
+/* Color Coding for Scheme Headings */
+#programs .cmchis {
+    color: #0078d7; /* Blue */
+}
+
+#programs .mrmbs {
+    color: #e91e63; /* Pink */
+}
+
+#programs .wifs {
+    color: #4caf50; /* Green */
+}
+
+#programs .amma-clinic {
+    color: #ff9800; /* Orange */
+}
+
+#programs .nutrition {
+    color: #9c27b0; /* Purple */
+}
+
+#programs .ambulance {
+    color: #f44336; /* Red */
+}
+
+#programs .kalaignar {
+    color: #3f51b5; /* Indigo */
+}
+
+#programs .mental-health {
+    color: #00bcd4; /* Cyan */
+}
+
+#programs .Mudhalvar-Marundhagam {
+    color: #8bc34a; /* Light Green */
+}
+/* SDG Goal 3 Section Styles */
+.sdg-goal {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sdg-icon {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.sdg-text h3 {
+    margin-top: 0;
+    color: #00796b; /* Dark teal color */
+    font-size: 1.5em;
+}
+
+.sdg-text p {
+    margin: 10px 0 0;
+    color: #004d40; /* Darker teal color */
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Scheme Details Section */
+.scheme-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Table Styles for Installments & Nutrition Kit */
+.scheme-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.scheme-table th, .scheme-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.scheme-table th {
+    background-color: #0078d7;
+    color: white;
+}
+
+/* Highlighted Sections */
+.highlight-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #e91e63; /* Pink highlight */
+    margin: 15px 0;
+}
+
+.highlight-box h3 {
+    margin: 0;
+    color: #e91e63;
+}
+
+/* Nutrition Kit List */
+.nutrition-list {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: square;
+}
+
+.nutrition-list li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .scheme-table th, .scheme-table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+.scheme-image-small {
+    width: 50%; /* Adjust the percentage as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
